@@ -1,26 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  darkMode: "class",
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./app/**/*.{ts,tsx,css,js,mdx,jsx}",
+    "./components/**/*.{ts,tsx,css,js,mdx,jsx}",
+    "./src/**/*.{ts,tsx,css,js,mdx,jsx}",
   ],
-  prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
-       // This is where we add our custom design choices from our design phase.
-      colors: {
-        'primary-slate': '#0f172a', // Our custom dark background
-        'accent-blue': '#3b82f6',   // Our custom energetic blue for buttons/highlights
+colors: {
+        'primary-slate': '#0f172a', 
+        'accent-blue': '#3b82f6',   
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -81,5 +71,4 @@ module.exports = {
     },
   },
   plugins: [],
-} 
-
+}

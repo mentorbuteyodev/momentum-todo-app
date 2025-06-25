@@ -20,15 +20,15 @@ export function TaskInput({ onTaskCreate } : TaskInputProps) {
     }
   }
   return (
-    <form onSubmit={handleSubmit} className="flex w-full max-w-lg items-center space-x-2">
+    <form onSubmit={handleSubmit} className="flex w-full max-w-lg items-center space-x-2 gap-3">
       <Input
         type="text"
         placeholder="What needs to be done?"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
-        className="bg-primary-slate border-gray-600 focus:ring-accent-blue text-lg"
+        className="input bg-primary-slate border-gray-600 focus:ring-accent-blue text-lg"
       />
-      <Button type="submit" className="bg-accent-blue hover:bg-blue-700 text-lg">
+      <Button type="submit" className="bg-accent-blue hover:bg-blue-700 text-lg ml-4">
         Add
       </Button>
     </form>
